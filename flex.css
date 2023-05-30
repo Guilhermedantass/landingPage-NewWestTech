@@ -1,0 +1,346 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400&family=Raleway:wght@300;400;500&family=Roboto:wght@300;700&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14pt;
+}
+
+img {
+    max-height: 300px;
+}
+
+#openMenu{
+    border: none;
+    background: none;
+    font-size: 30px;
+    padding: 0 5px;
+    cursor: pointer;
+    display: none;
+    color: white;
+}
+
+body{
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1 1 100vw;
+}
+
+header, main {
+    display: flex;
+    flex: 1 1 100vw;
+    flex-wrap: wrap;
+}
+
+header {
+    height: 80px;
+    align-items: center;
+    justify-content: space-between;
+    background-color: black;
+    padding: 0 3%;
+    
+}
+
+.cabecalho-menu {
+    display: flex;
+    
+    gap: 60px;
+}
+
+.conteudo-principal{
+    border-top: 1px solid #a1a1a1;
+    background-color: black;
+    color: white;
+    font-family: 'Raleway', sans-serif;
+    display: flex;
+    flex: 1 1 100vw;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    height: calc(100vh - 80px);
+    
+}
+
+.conteudo-principal-escrito{
+    max-width: 450px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 60px;
+    justify-content: center;
+}
+
+.conteudo-principal-escrito-titulo{
+    font-size: 25pt;
+    text-align: center;
+    font-weight: 400;
+}
+
+.conteudo-principal-escrito-subtitulo{
+    font-size: 15pt;
+    font-weight: 700;
+    text-align: center;
+}
+
+.conteudo-principal-escrito-botao{
+    width: 250px;
+    height: 40px;
+    text-align: center;
+    background-color: #0071CF;
+    border: none;
+    border-radius: 20px;
+    color: white;
+    font-size: 22px;
+    font-family: 'Raleway', sans-serif;
+}
+
+.conteudo-sobre{
+    border-top: 1px solid #a1a1a1;
+    background-color: black;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex: 1 1 100vw;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    height: calc(100vh - 80px);
+   
+    
+}
+
+.conteudo-sobre-escrito{
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    gap: 20px;
+    text-align: justify;
+}
+.conteudo-sobre-escrito-titulo{
+    font-size: 32px;
+}
+
+.conteudo-sobre-escrito-paragrafo{
+    font-size: 16px;
+    
+}
+
+.conteudo-servicos{
+    border-top: 1px solid grey;
+    background-color: black;
+    display: flex;
+    flex: 1 1 100vw;
+    flex-direction: column;
+    gap: 60px;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    padding-top: 40px;
+    text-align: center;
+    height: calc(100vh - 80px);
+}
+
+.conteudo-servicos-titulo{
+    font-size: 49px;
+}
+
+.conteudo-servicos-servicos{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-bottom: 40px;
+    
+}
+.conteudo-servicos-servicos > div{
+    flex: 1 1 350px;
+    margin-top: 50px;
+}
+
+.conteudo-servicos-servicos-item-img{
+    max-height: 110px;
+}
+.conteudo-servicos-servicos-item-nome{
+    font-size: 15px;
+    font-weight: 300;
+    margin-top: 15px;
+}
+
+.conteudo-contato{
+    background-color: black;
+    display: flex;
+    flex: 1 1 100vw;
+    height: calc(100vh - 80px);
+    align-items: center;
+    justify-content: center;
+    border-top: 1px solid grey;
+}
+
+.conteudo-contato-main{
+    background-color: white;
+    display: flex;
+    flex: 1 1 20vw;
+    flex-wrap: wrap;
+    max-width: 900px;
+    height: 400px;
+    justify-content: space-between;
+}
+
+
+.img-contato{
+    background-image: url('image/contato.jpg');
+    background-size: cover;
+    width: 30%;
+    height: 100%;
+}
+
+.conteudo-contato-main-form{
+    display: flex;
+    flex: 1 1 100vw;
+    flex-direction: column;
+    max-width: 300px;
+    justify-content: center;
+    gap: 20px;
+}
+.conteudo-contato-main-info{
+    display: flex;
+    flex-direction: column;
+    justify-content:space-around;    
+}
+
+.conteudo-contato-main-form-formulario{
+    display: flex;
+    flex-direction: column;
+    gap:30px;
+}
+
+.conteudo-contato-main-form-formulario-nome{
+    border: none;
+    border-bottom: 2px solid black;
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    outline: none;
+    
+
+}
+.conteudo-contato-main-form-formulario-email{
+    border: none;
+    border-bottom: 2px solid black;
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    outline: none;
+    
+}
+.conteudo-contato-main-form-formulario-mensagem{
+    border: none;
+    border-bottom: 2px solid black;
+    resize: none;
+    outline: none;
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    
+}
+
+.conteudo-contato-main-form-formulario-botao{
+    height: 35px;
+    width: 80px;
+    background-color: white;
+    border: 2px solid black;
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.conteudo-contato-main-item{
+    color: black;
+    margin-bottom: 35px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.conteudo-contato-main-item p{
+    margin-top: 5px;
+    font-size: 12px;
+}
+
+.conteudo-contato-main-item i{
+    margin-right: 10px;
+}
+
+.conteudo-contato-main-item h3{
+    font-weight: 500;
+}
+
+
+@media screen and (max-width: 930px){
+    .cabecalho-menu{
+        display:none;
+    }
+    #openMenu{
+        display: block;
+    }
+    .conteudo-sobre{
+        padding-top: 15%;
+        gap: 60px;
+        height: auto;
+        padding-bottom: 50px;
+    }
+    
+}
+@media screen and (max-width: 860px){
+    .conteudo-principal, .conteudo-sobre{
+        padding-top: 15%;
+        gap: 60px;
+        height: auto;
+        padding-bottom: 50px;
+    }
+
+    
+}
+
+@media screen and (max-width: 700px){
+    .conteudo-sobre-escrito{
+        max-width: 400px;
+    }
+
+    img {
+        max-width: 250px;
+    }
+}
+@media screen and (max-width: 600px){
+
+    img {
+        max-width: 250px;
+    }
+}
+
+@media screen and (max-width: 480px){
+    .conteudo-principal-escrito-titulo{
+        font-size: 20pt;
+    }
+    
+}
+
+@media screen and (max-width: 480px){
+    .conteudo-sobre-escrito{
+        max-width: 350px;
+    }
+    
+}
+
+
+
+
+

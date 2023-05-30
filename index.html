@@ -6,21 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="image/favicon.png" type="image/x-icon">
 
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="flex.css">
+    <!-- <link rel="stylesheet" href="style.css"> -->
 
     <title>New West Tech - Automação Residencial</title>
 </head>
 <body>
 
-    <header class="cabecalho">
+    <header>
         <a class="cabecalho-logo" href="">NEW WEST TECH</a>
-        <div class="mobile-menu">
-            <div class="line1"></div>
-            <div class="line2"></div>
-            <div class="line3"></div>
-        </div>
+
+        <button id="openMenu">&#9776;</button>
+
         <nav class="cabecalho-menu ">
-            <a class="cabecalho-menu-item" href="#home">HOME</a>
+            <a class="cabecalho-menu-item" href="">HOME</a>
             <a class="cabecalho-menu-item" href="#sobre">SOBRE</a>
             <a class="cabecalho-menu-item" href="#servicos">SERVIÇOS</a>
             <a class="cabecalho-menu-item" href="#contato">CONTATO</a>
@@ -80,20 +79,7 @@
 
         <section class="conteudo-contato"  id="contato">
             <div class="conteudo-contato-main">
-                <div>
-                    <div class="conteudo-contato-main-item">
-                        <h3><i class="fa-solid fa-phone"></i> LIGUE PARA NÓS </h3>
-                        <p>(84) 9 9999-9999 | (84) 9 8888-8888</p>
-                    </div>
-                    <div class="conteudo-contato-main-item">
-                        <h3><i class="fa-solid fa-location-dot"></i> LOCALIZAÇÃO</h3>
-                        <p>Av. Exemplo, 2157,  Nova Exemplo, Exemplo</p>
-                    </div>
-                    <div class="conteudo-contato-main-item">
-                        <h3><i class="fa-solid fa-calendar-days"></i> HORÁRIO COMERCIAL</h3>
-                        <p>Segunda à Sexta: 8:00-12:00 e 14:00-18:00</p>
-                    </div>
-                </div>
+                <div class="img-contato"></div>
                 <div class="conteudo-contato-main-form">
                     <h3 class="conteudo-contato-main-form-titulo">CONTATE-NOS</h3>
                     <form action="" class="conteudo-contato-main-form-formulario">
@@ -103,6 +89,21 @@
                         <input type="submit" value="Enviar" class="conteudo-contato-main-form-formulario-botao">
                     </form>
                 </div>
+                <div class="conteudo-contato-main-info">
+                    <div class="conteudo-contato-main-item">
+                        <h3><i class="fa-solid fa-phone"></i> LIGUE PARA NÓS </h3>
+                        <p>(84) 9 9999-9999 | (84) 9 8888-8888</p>
+                    </div>
+                    <div class="conteudo-contato-main-item">
+                        <h3><i class="fa-solid fa-location-dot"></i> LOCALIZAÇÃO</h3>
+                        <p >Av. Exemplo, 2157, <br>  Nova Exemplo, Exemplo</p>
+                    </div>
+                    <div class="conteudo-contato-main-item">
+                        <h3><i class="fa-solid fa-calendar-days"></i> HORÁRIO COMERCIAL</h3>
+                        <p>Segunda à Sexta: 8:00-12:00 e 14:00-18:00</p>
+                    </div>
+                </div>
+                
             </div>
         </section>
 
