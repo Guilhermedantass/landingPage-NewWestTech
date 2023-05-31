@@ -1,3 +1,5 @@
+/*############################   ANIMAÇÃO           #################################################*/
+
 const target = document.querySelectorAll('[data-anime]');
 const animationClass = 'animete';
 
@@ -20,7 +22,7 @@ if(target.length){
     })
 }
 
-/*#############################################################################*/
+/*############################  SCROLL SUTIL              #################################################*/
 
 
 const menuItens = document.querySelectorAll('.cabecalho-menu-item');
@@ -49,33 +51,33 @@ function getScrollTopByHref (element){
     return document.querySelector(id).offsetTop;
 }
 
-/* ################################## */
 
-const classActive = 'active';
-const mobileBotao = document.querySelector('.mobile-menu');
-const navbar = document.querySelector('.cabecalho-menu');
-const item = document.querySelectorAll('.cabecalho-menu-item');
+/* ################  BARRA LATERAL             ########################## */
 
 
-mobileBotao.onclick = function(){
-    if (document.getElementsByClassName('active').length){
-        navbar.classList.remove('active');
-        item.forEach(function(item){
-            item.classList.remove('active');
-        });
-    }else{
-        navbar.classList.add('active');
-        item.forEach(function(item){
-            item.classList.add('active');
-        });
-    }
-};
+openMenu.addEventListener('click',  () => {
+    document.getElementById("menu").style.display = "flex";
 
-item.forEach(function(element){
-    element.onclick = function(){
-        navbar.classList.remove('active');
-        item.forEach(function(item){
-            item.classList.remove('active');
-        });
-    }
+    document.getElementById("menu").style.right = ((document.getElementById("menu").offsetWidth) * -1) + 'px';
+
+    openMenu.style.display = 'none';
+
+    setTimeout(()=>{
+        document.getElementById("menu").style.opacity = '1';
+
+        document.getElementById("menu").style.right = 0
+    }, 20)
+    
+})
+closeMenu.addEventListener('click',  () => {
+    document.getElementById("menu").style.opacity = '0';
+
+    document.getElementById("menu").style.right = (document.getElementById("menu").offsetWidth * -1) + 'px';
+
+    setTimeout(()=>{
+        document.getElementById("menu").removeAttribute('style');
+        openMenu.removeAttribute('style');
+    }, 200)
+
+    
 })
